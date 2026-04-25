@@ -4,6 +4,11 @@ import { AuthProvider } from './contexts/AuthContext';
 import Login from './pages/Login';
 import DashboardLayout from './layouts/DashboardLayout';
 import Overview from './pages/Overview';
+import Students from './pages/Students';
+import Attendance from './pages/Attendance';
+import Fees from './pages/Fees';
+import Library from './pages/Library';
+import Exams from './pages/Exams';
 
 // Placeholder empty pages
 const Placeholder = ({ title }) => (
@@ -21,11 +26,11 @@ function AppRoutes() {
       <Route path="/login" element={<Login />} />
       <Route element={<DashboardLayout />}>
         <Route path="/" element={<Overview />} />
-        <Route path="/students" element={<Placeholder title="Students Directory" />} />
-        <Route path="/attendance" element={<Placeholder title="Attendance System" />} />
-        <Route path="/fees" element={<Placeholder title="Fee Management" />} />
-        <Route path="/library" element={<Placeholder title="Library System" />} />
-        <Route path="/exams" element={<Placeholder title="Exam Results" />} />
+        <Route path="/students" element={<Students />} />
+        <Route path="/attendance" element={<Attendance />} />
+        <Route path="/fees" element={<Fees />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/exams" element={<Exams />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

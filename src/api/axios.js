@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Get baseline URL from typical Vite env setups or fallback to localhost
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://xjrf6b92-8000.inc1.devtunnels.ms';
 
 export const api = axios.create({
   baseURL: BASE_URL,
